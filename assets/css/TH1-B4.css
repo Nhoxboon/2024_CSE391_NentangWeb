@@ -1,0 +1,56 @@
+body {
+    border: antiquewhite 5px solid;
+    padding: 16px;
+}
+
+.content {
+    display: flex;
+    margin: 6px 20px;
+
+}
+
+.topics {
+    min-width: 150px;
+}
+
+.info {
+    flex: 1;
+
+}
+
+.contact-info .title,
+.basic-info .title {
+    /*    tao ke chan*/
+    border-bottom: gray 3px solid;
+
+}
+
+.content .input-f-name {
+    position: relative;
+}
+
+footer {
+    display: flex;
+    border-top: gray 3px solid;
+
+}
+
+footer .button {
+    /*    cho ve ben phai*/
+    margin-left: auto;
+
+}
+
+footer .button button {
+    /*    nen den chu trang*/
+    background-color: black;
+    color: white;
+
+}
+
+.arrow,
+footer .button {
+    margin-top: 5px;
+}
+
+/*de icon-dow trong the input*/
