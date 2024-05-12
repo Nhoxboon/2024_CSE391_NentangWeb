@@ -15,6 +15,20 @@ body {
 
 .info {
     flex: 1;
+}
+
+.icon-dow {
+    position: relative;
+    right: 17px;
+    top: 3px;
+
+}
+
+.icon-lock {
+    position: relative;
+    right: 17px;
+    top: 3px;
+
 
 }
 
@@ -25,7 +39,7 @@ body {
 
 }
 
-.content .input-f-name {
+.content #f-name {
     position: relative;
 }
 
@@ -52,5 +66,6 @@ footer .button button {
 footer .button {
     margin-top: 5px;
 }
+
 
 /*de icon-dow trong the input*/
