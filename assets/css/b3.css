@@ -1,0 +1,17 @@
+table{
+    border-collapse: collapse;
+    padding: 0%;
+    
+    justify-content: center;
+}
+
+th, td{
+    padding: 10px;
+    /* background-color: aqua; */
+    text-align: center;
+    border: 1px solid;
+}
+
+thead th{
+    text-align: center;
+}

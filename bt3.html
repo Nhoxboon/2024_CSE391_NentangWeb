@@ -4,53 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Grades</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            text-align: center;
-        }
-        table {
-            margin: 20px auto;
-            border-collapse: collapse;
-            width: 80%;
-            background-color: #ffffff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        th, td {
-            padding: 10px;
-            border-bottom: 1px solid #dddddd;
-        }
-        th {
-            background-color: #4a148c;
-            color: white;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-    </style>
+    <link rel="stylesheet" href="assets\css\b3.css">
 </head>
 <body>
-    <h1>Student Grades</h1>
     <table>
         <thead>
             <tr>
+                <th rowspan="2" colspan="2">Student</th>
+                <th colspan="4">Exam</th>
+                <th colspan="4">2nd Exam</th>
+                <th rowspan="2" colspan="2">Final Grade</th>
+            </tr>
+            <tr>
+                <th>Q1</th>
+                <th>Q2</th>
+                <th>Q3</th>
+                <th rowspan="2">Grade</th>
+                <th>Q1</th>
+                <th>Q2</th>
+                <th>Q3</th>
+                <th rowspan="2">Grade</th>
+            </tr>
+            <tr>
                 <th>Code</th>
                 <th>Name</th>
-                <th>Q1</th>
-                <th>Q2</th>
-                <th>Q3</th>
-                <th>Grade</th>
-                <th>Q1</th>
-                <th>Q2</th>
-                <th>Q3</th>
-                <th>Grade</th>
-                <th>Final Grade</th>
+                <th>8</th>
+                <th>7</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>NR</th>
+                <th>R</th>  
             </tr>
         </thead>
-        <tbody>
-            <!-- Add student data here -->
-        </tbody>
+         <tbody>
+            <tr>
+                <th>80549061</th>
+                <th>John</th>
+                <th>70%</th>
+                <th>100%</th>
+                <th>50%</th>
+                <th>17.6</th>
+                <th colspan="4"></th>
+                <th>17.6</th>
+                <th>18</th>
+            </tr>
+            <tr>
+                <th>80549062</th>
+                <th>Mary</th>
+                <th>10%</th>
+                <th>50%</th>
+                <th>50%</th>
+                <th>6.8</th>
+                <th>100%</th>
+                <th>100%</th>
+                <th>50%</th>
+                <th>16.5</th>
+                <th>16.5</th>
+                <th>17</th>
+            </tr>
+            <tr>
+                <th>80549063</th>
+                <th>Claire</th>
+                <th colspan="4"></th>
+                <th>50%</th>
+                <th>50%</th>
+                <th>50%</th>
+                <th>10.0</th>
+                <th>10.0</th>
+                <th>10</th>
+            </tr>
+         </tbody>   
     </table>
 </body>
 </html>
