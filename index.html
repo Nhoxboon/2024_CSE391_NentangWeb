@@ -3,66 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bảng điểm</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th rowspan="2" colspan="2">Student</th>
-                <th colspan="4">Exam</th>
-                <th colspan="4">2nd Exam</th>
-                <th rowspan="2" colspan="2">Final Grade</th>
-            </tr>
-            <tr>
-                <th>Q1</th>
-                <th>Q2</th>
-                <th>Q3</th>
-                <th rowspan="2">Grade</th>
-                <th>Q1</th>
-                <th>Q2</th>
-                <th>Q3</th>
-                <th rowspan="2">Grade</th>
-            </tr>
-            <tr>
-                <th>Code</th>
-                <th>Name</th>
-                <th>8</th>
-                <th>7</th>
-                <th>5</th>
-                <th>6</th>
-                <th>7</th>
-                <th>8</th>
-                <th>NR</th>
-                <th>R</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>80549061</td>
-                <td>John</td>
-                <td>70%</td>
-                <td>100%</td>
-                <td>100%</td>
-                <td>17.6</td>
-                <td colspan="4"></td>
-                <td>17.6</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>80549062</td>
-                <td>Mary</td>
-                <td>10%</td>
-                <td>50%</td>
-            </tr>
-            <tr>
-                <td>80549063</td>
-                <td>Claire</td>
-                <td>50%</td>
-                <td>50%</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="header text-red"><h1>khóa học sắp khai giảng</h1></div>
+    <div class="content-list">
+        <!-- hang dau -->
+        <div class="content">
+            <img src="/assets/img/pic1.webp" alt="Ảnh lập trình">
+            <h3>LẬP TRÌNH VIÊN QUỐC TẾ</h3>
+            <p class="nd-khoahoc">Chương trình đào tạo chuẩn quốc tế và 
+                toàn diện. Phù hợp với học sinh tốt nghiệp THPT, sinh viên 
+                và người định hướng theo nghề lập trình chuyên nghiệp.</p>
+            <p class="bonus"><i class="fa-solid fa-gift text-red"></i>Học bổng 15.000.000 VNĐ</p>
+            <p class="bonus"><i class="fa-solid fa-clock text-red"></i>Khai giảng: 2/2024</p>
+            <p class="bonus"><i class="fa-solid fa-bookmark text-red"></i>Thời lượng: 2-2.5 năm</p>
+        </div>
+        <div class="content">
+            <img src="/assets/img/pic2.webp" alt="Ảnh lập trình">
+            <h3>LẬP TRÌNH WEB FULLSTACK</h3>
+            <p class="nd-khoahoc">Khóa học phù hợp với người bắt đầu lập trình hoặc người chuyển nghề. 
+                Trang bị từ frontend đến backend, xây dựng website hoàn chỉnh sau khóa học.</p>
+            <p class="bonus"><i class="fa-solid fa-gift text-red"></i>Ưu đãi giảm 15% học phí</p>
+            <p class="bonus"><i class="fa-solid fa-clock text-red"></i>Khai giảng: 2/2024</p>
+            <p class="bonus"><i class="fa-solid fa-bookmark text-red"></i>Thời lượng: 6 tháng</p>
+        </div>
+        <div class="content">
+            <img src="/assets/img/pic3.webp" alt="Ảnh lập trình">
+            <h3>LẬP TRÌNH JAVA FULLSTACK</h3>
+            <p class="nd-khoahoc">Phát triển ứng dụng web từ cơ bản đến nâng cao bằng Java, 
+                các ứng dụng doanh nghiệp sử dụng J2EE, Servlet, JSP, Spring Framework, EJB,...</p>
+            <p class="bonus"><i class="fa-solid fa-gift text-red"></i>Ưu đãi giảm 15% học phí</p>
+            <p class="bonus"><i class="fa-solid fa-clock text-red"></i>Khai giảng: 2/2024</p>
+            <p class="bonus"><i class="fa-solid fa-bookmark text-red"></i>Thời lượng: 236 giờ</p>
+        </div>
+        <!-- hang hai -->
+        <div class="content">
+            <img src="/assets/img/pic4.webp" alt="Ảnh lập trình">
+            <h3>LẬP TRÌNH PHP & LARAVEL</h3>
+            <p class="nd-khoahoc">PHP là một trong các ngôn ngữ thiết kế web mạnh nhất. 
+                Khóa học trang bị kỹ năng xây dựng web hoàn chỉnh sử dụng PHP kết hợp Laravel Framework.</p>
+            <p class="bonus"><i class="fa-solid fa-clock text-red"></i>Khai giảng: 5/2/2024</p>
+            <p class="bonus"><i class="fa-solid fa-gift text-red"></i>Học phí 9.600.000 VNĐ</p>
+            <p class="bonus"><i class="fa-solid fa-bookmark text-red"></i>Thời lượng: 36 giờ</p>
+        </div>
+        <div class="content">
+            <img src="/assets/img/pic5.webp" alt="Ảnh lập trình">
+            <h3>LẬP TRÌNH PHP & LARAVEL</h3>
+            <p class="nd-khoahoc">Phát triển ứng dụng web sử dụng nền tảng ASP.NET Core MVC. 
+                Để học tốt khóa học yêu cầu học viên đã có kiến thức C# và Frontend.</p>
+            <p class="bonus"><i class="fa-solid fa-clock text-red"></i>Khai giảng: 2/2024</p>
+            <p class="bonus"><i class="fa-solid fa-bookmark text-red"></i>Thời lượng: 40 giờ</p>
+            <p class="bonus"><i class="fa-solid fa-gift text-red"></i>Học phí 6.000.000 VNĐ</p>
+        </div>
+        <div class="content">
+            <img src="/assets/img/pic6.webp" alt="Ảnh lập trình">
+            <h3>LẬP TRÌNH SQL SERVER</h3>
+            <p class="nd-khoahoc">Trang bị những kiến thức nền tảng vững chắc về SQL Server như các kỹ thuật:
+                 lọc dữ liệu, phân tích, thiết kế và quản trị cơ sở dữ liệu,...</p>
+            <p class="bonus"><i class="fa-solid fa-clock text-red"></i>Khai giảng: 2/2024</p>
+            <p class="bonus"><i class="fa-solid fa-gift text-red"></i>Học phí 4.500.000 VNĐ</p>
+            <p class="bonus"><i class="fa-solid fa-bookmark text-red"></i>Thời lượng: 30 giờ</p>
+        </div>
+    </div>
 </body>
 </html>

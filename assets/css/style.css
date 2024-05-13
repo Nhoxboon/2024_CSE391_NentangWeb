@@ -1,18 +1,37 @@
-table {
-    border-collapse: collapse;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-red {
+    color: #922d2d;
+}
+
+.header {
+    text-transform: uppercase;
+    padding-left: 5px;
+    border-left: 5px solid #922d2d;
+    font-weight: 500;
+}
+
+.content-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 48px;
+}
+
+.content-list .content {
+    /* padding: 25px; */
+}
+
+.content-list .content img {
     width: 100%;
 }
-
-th, td {
-    padding: 8px;
-    text-align: left;
-    border: 1px solid #ddd;
+.content-list .content .nd-khoahoc {
+    text-align: justify;
 }
 
-th {
-    background-color: #f0f0f0;
+.content-list .content i {
+    display: inline-block;
+    padding-right: 10px;
 }
 
-thead th{
-    text-align: center;
-}
