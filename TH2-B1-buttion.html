@@ -1,0 +1,26 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+<meta charset="utf-8"> 
+<title>Học web chuẩn</title> 
+<script src="https://code.jquery.com/jquery-latest.js"></script> 
+<script> 
+  $(function(){ 
+    /* Code viết ở đây ↓ */ 
+    //khi nhấn vào button thì thực hien thay doi noi dung the div
+    $("button").click(function(){
+      $("#box div").text("Bach dz");
+    });
+ 
+  }); 
+</script> 
+</head> 
+ 
+<body> 
+<div id="box"> 
+  <h3>Title</h3> 
+  <div>In suscipit nec velit sit amet convallis. Integer</div> 
+</div> 
+<button type="button">Click</button> 
+</body> 
+</html>
