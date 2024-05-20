@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        //Cho một cấu trúc HTML như bên dưới, khi click button sẽ thay đổi nội dung html bên trong div.
+        $(function()
+        {
+            $("button").click(function()
+            {
+                $("#box").html("<h3>Report</h3><div>Yes, ma'am.</div>");
+            });
+        })
+        
+    </script>
+</head>
+<body>
+    <div id="box">
+        <h3>Order</h3>
+        <div>You got it?</div>
+    </div>
+    <button type="button">Click</button>
+</body>
+</html>
