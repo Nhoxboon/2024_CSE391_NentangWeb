@@ -1,14 +1,71 @@
-table {
-    border-collapse: collapse;
-    width: 100%;
+body {
+    border: antiquewhite 5px solid;
+    padding: 16px;
 }
 
-th, td {
-    padding: 8px;
-    text-align: left;
-    border: 1px solid #ddd;
+.content {
+    display: flex;
+    margin: 6px 20px;
+
 }
 
-th {
-    background-color: #f0f0f0;
+.topics {
+    min-width: 150px;
 }
+
+.info {
+    flex: 1;
+}
+
+.icon-dow {
+    position: relative;
+    right: 17px;
+    top: 3px;
+
+}
+
+.icon-lock {
+    position: relative;
+    right: 17px;
+    top: 3px;
+
+
+}
+
+.contact-info .title,
+.basic-info .title {
+    /*    tao ke chan*/
+    border-bottom: gray 3px solid;
+
+}
+
+.content #f-name {
+    position: relative;
+}
+
+footer {
+    display: flex;
+    border-top: gray 3px solid;
+
+}
+
+footer .button {
+    /*    cho ve ben phai*/
+    margin-left: auto;
+
+}
+
+footer .button button {
+    /*    nen den chu trang*/
+    background-color: black;
+    color: white;
+
+}
+
+.arrow,
+footer .button {
+    margin-top: 5px;
+}
+
+
+/*de icon-dow trong the input*/
