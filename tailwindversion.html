@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+<header class="flex justify-between items-center py-2 px-4">
+    <nav class="flex space-x-4 items-center">
+        <a class="uppercase text-3xl text-black cursor-not-allowed py-1" href="#" aria-current="page">tlu</a>
+        <a class="uppercase py-1 pl-5 cursor-not-allowed" href="#">trang chủ</a>
+        <a class="uppercase py-1 pl-5 cursor-not-allowed" href="#">quản lý nhân viên</a>
+    </nav>
+    <div class="search-btn">
+        <form class="flex items-center">
+            <input class="border-2 p-1 m-1 rounded-md text-sm" type="search" placeholder="Nhập nội dung tìm kiếm" aria-label="Search">
+            <button class="border border-green-500 text-green-500 px-3 py-2 m-1 rounded-md text-sm hover:bg-green-500 hover:text-white" type="submit">Tìm</button>
+        </form>
+    </div>
+</header>
+<main>
+    <div class="bg-gradient-to-b from-white to-gray-300 h-10" style="background: linear-gradient(0,#ffffff,gray); height: 2rem;"></div>
+    <div class="w-full">
+        <div class="flex justify-between p-3 pt-5 pb-5 mb-2 bg-blue-600 text-white w-full">
+            <h3 class="uppercase text-3xl" >quản lý <strong>nhân viên</strong></h3>
+            <div class="button-option flex space-x-2">
+                <button class="bg-red-600 px-3 py-1 text-white text-base flex items-center rounded-md text-sm hover:bg-red-700" type="button">
+                    <i class="bi bi-dash-circle mr-2"></i>Xóa
+                </button>
+                <button type="button" class="bg-green-600 px-2 py-1 text-white text-base flex items-center rounded-md text-sm hover:bg-green-700">
+                    <i class="bi bi-plus-square-fill mr-2"></i>Thêm nhân viên
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto">
+        <div class="grid grid-cols-6 border-t border-b py-3 mb-2">
+            <!-- 6 cột -->
+            <div><input type="checkbox" id="main-checkbox"></div>
+            <div><label>Ho và Tên</label></div>
+            <div><label>Thư điện tử</label></div>
+            <div><label>Địa chỉ</label></div>
+            <div><label>Số điện thoại</label></div>
+            <div><label>Hàng động</label></div>
+        </div>
+        <div class="grid grid-cols-6 border-t border-b py-2">
+            <!-- 6 cột -->
+            <div><input type="checkbox" id="main-checkbox"></div>
+            <div><label>Nguyễn Văn A</label></div>
+            <div><label>ngvana@example.com</label></div>
+            <div><label>Hà Nội, Việt Nam</label></div>
+            <div><label>0123456789</label></div>
+            <div class="flex space-x-2">
+                <i class="bi bi-pencil"></i>
+                <i class="bi bi-trash3"></i>
+            </div>
+        </div>
+        <div class="grid grid-cols-6 border-t border-b py-2">
+            <!-- 6 cột -->
+            <div><input type="checkbox" id="main-checkbox"></div>
+            <div><label>Trần Thị B</label></div>
+            <div><label>tranthib@example.com</label></div>
+            <div><label>Hồ Chí Minh, Việt Nam</label></div>
+            <div><label>0987654321</label></div>
+            <div class="flex space-x-2">
+                <i class="bi bi-pencil"></i>
+                <i class="bi bi-trash3"></i>
+            </div>
+        </div>
+        <div class="grid grid-cols-6 border-t border-b py-2">
+            <!-- 6 cột -->
+            <div><input type="checkbox" id="main-checkbox"></div>
+            <div><label>Lê Văn C</label></div>
+            <div><label>levanc@example.com</label></div>
+            <div><label>Đà Nẵng, Việt Nam</label></div>
+            <div><label>0123456789</label></div>
+            <div class="flex space-x-2">
+                <i class="bi bi-pencil"></i>
+                <i class="bi bi-trash3"></i>
+            </div>
+        </div>
+        <div class="grid grid-cols-6 border-t border-b py-2">
+            <!-- 6 cột -->
+            <div><input type="checkbox" id="main-checkbox"></div>
+            <div><label>Phạm Thị D</label></div>
+            <div><label>phamthid@example.com</label></div>
+            <div><label>Cần Thơ, Việt Nam</label></div>
+            <div><label>0987654321</label></div>
+            <div class="flex space-x-2">
+                <i class="bi bi-pencil"></i>
+                <i class="bi bi-trash3"></i>
+            </div>
+        </div>
+        <div class="grid grid-cols-6 border-t border-b py-2">
+            <!-- 6 cột -->
+            <div><input type="checkbox" id="main-checkbox"></div>
+            <div><label>Đặng Văn E</label></div>
+            <div><label>dangvane@example.com</label></div>
+            <div><label>Hải Phòng, Việt Nam</label></div>
+            <div><label>0123456789</label></div>
+            <div class="flex space-x-2">
+                <i class="bi bi-pencil"></i>
+                <i class="bi bi-trash3"></i>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container mx-auto flex justify-between p-4">
+        <div class="text-gray-500">
+            <p>Hiển thị <strong>5/25</strong> bản ghi</p>
+        </div>
+        <div class="flex space-x-2">
+            <a href="#" class="p-2 text-gray-500 no-underline">Trước</a>
+            <a href="#" class="p-2 text-gray-500 no-underline">1</a>
+            <a href="#" class="p-2 text-gray-500 no-underline">2</a>
+            <a href="#" class="p-2 text-gray-500 no-underline">3</a>
+            <a href="#" class="p-2 text-gray-500 no-underline">4</a>
+            <a href="#" class="p-2 text-gray-500 no-underline">5</a>
+            <a href="#" class="p-2 text-gray-500 no-underline">Sau</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
