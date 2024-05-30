@@ -28,21 +28,71 @@ $(document).ready(function () {
         sinhVien.forEach((sv, index) => {
             const row =
                 `<tr>
-    <td>${sv.hoTen}</td>
-    <td>${sv.maSV}</td>
-    <td>${sv.ngaySinh}</td>
+    <td class="border px-4 py-2">${sv.hoTen}</td>
+    <td class="border px-4 py-2">${sv.maSV}</td>
+    <td class="border px-4 py-2">${sv.ngaySinh}</td>
 
     <td>
-        <button class="btn btn-primary btn-edit" data-index="${index}">Sửa</button>
+        <button class="btn btn-primary btn-edit" id="btn-edit" data-index="${index}">Sửa</button>
         <button class="btn btn-danger btn-delete" data-index="${index}">Xóa</button>
     </td>
 </tr>`
             tbody.append(row);
-        })
+        });
+        $(".btn-delete").click(function () {
+            if (confirm("Bạn có chắc chắn muốn xóa sinh viên này không?")) {
+                const studentIndex = $(this).data("index");
+                const classIndex = $(this).data("class-index");
+                xoaSv(classIndex, studentIndex);
+            }
+        });
     }
 
 
 // Các hàm xử lý sự kiện thêm, sửa, xóa sinh viên
 
+// xoa sinh vien
+//     $(".btn-delete").click(function () {
+//
+//         if (confirm("Bạn có chắc chắn muốn xóa sinh viên này?")) {
+//             const indexSv = $(this).data('index');
+//             const classIndex = $(this).data('class-index');
+//             xoaSv(indexSv, classIndex);
+//         }
+//     })
+
+
+    function xoaSv(indexSv, classIndex) {
+        data.lopHoc[classIndex].sinhVien.splice(indexSv, 1);
+        // saveData();
+        updateDataFile()
+        hienThiBang(data.lopHoc[classIndex].sinhVien);
+    }
+
+    // function saveData() {
+    //     $.ajax({
+    //         url: "data.json",
+    //         method: "POST",
+    //         data: JSON.stringify(data),
+    //         contentType: "application/json",
+    //         success: function (response) {
+    //             console.log('quyet chim to vai lon');
+    //         }
+    //     });
+    // }
+
+    function updateDataFile() {
+        $.ajax({
+            url: "save.php",
+            method: "POST",
+            data: {data: JSON.stringify(data)},
+            success: function (response) {
+                console.log("Data updated successfully");
+            },
+            error: function (xhr, status, error) {
+                console.error("Error updating data: ", error);
+            }
+        });
+    }
 
 });
