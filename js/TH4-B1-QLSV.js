@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     function renderTable() {
         const tbody = $('#bangSinhVien tbody');
-        tbody.empty();
+        tbody.empty(); // Xóa hết các dòng trước khi render lại
         sinhVien.forEach((sv, index) => {
             tbody.append(`
                     <tr>
@@ -69,3 +69,7 @@ $(document).ready(function () {
 
     renderTable();
 });
+
+
+
+
