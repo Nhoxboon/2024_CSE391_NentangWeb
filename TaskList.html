@@ -11,14 +11,14 @@
     <link href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
 <body>
-<div class="container">
+<div class="container border">
     <header class="d-flex justify-content-between">
         <h1>Task List</h1>
-        <h3 class="bg-primary text-light rounded align-self-center p-1" style="cursor: pointer"><i
-                class="bi bi-file-plus"></i> App Task</h3>
+        <h3 class="add-task bg-primary text-light rounded align-self-center p-1" style="cursor: pointer"><i
+                class="bi bi-file-plus "></i> App Task</h3>
     </header>
     <div class="align-content-around">
-        <ul class="">
+        <ul class="list-task">
             <li class="border rounded row m-2">
                 <div class="col">
                     <p class="text-secondary">Task</p>
@@ -35,7 +35,7 @@
                     <i class="bi bi-circle "></i>
                 </div>
                 <div class="col d-flex align-self-center">
-                    <i class="bi bi-pencil-square fs-2 text "></i>
+                    <i class="bi bi-pencil-square fs-2 text"></i>
                     <i class="bi bi-trash-fill fs-2 text text-danger"></i>
                 </div>
             </li>
@@ -64,14 +64,14 @@
             <li class="border rounded row m-2">
                 <div class="col">
                     <p class="text-secondary">Task</p>
-                    <p>Go to market</p>
+                    <p id="task-name">Go to market</p>
                 </div>
                 <div class="col">
                     <p class="text-secondary">Priority</p>
-                    <p class="text-warning">Medium</p>
+                    <p class="text-warning" id="priority">Medium</p>
                 </div>
                 <div class="col align-self-center d-flex p-3">
-                    <p class="bg-secondary rounded text-light">In Progress</p>
+                    <p class="bg-secondary rounded text-light " id="status">In Progress</p>
                 </div>
                 <div class="col align-self-center">
                     <i class="bi bi-circle "></i>
@@ -83,6 +83,25 @@
             </li>
         </ul>
 
+    </div>
+</div>
+<!--Hien thi form nhap-->
+<div class="form-input container border ">
+    <nav class="d-flex justify-content-between">
+        <h3>App Task</h3>
+        <i class="bi bi-x fs-3" style="cursor: pointer"></i>
+    </nav>
+    <div style="position: relative">
+        <p class="text-secondary">Task</p>
+        <input class="w-75 p-3 rounded input" placeholder="Type your task here..." type="text">
+        <p class="text-secondary">Priority</p>
+        <div class="d-flex">
+            <button class="btn btn-danger m-2" type="button">High</button>
+            <button class="btn btn-warning m-2" type="button">Medium</button>
+            <button class="btn btn-success m-2" type="button">Low</button>
+        </div>
+        <button class="btn btn-secondary add" style="position: absolute; right: 0; bottom: 0;" type="button">Add
+        </button>
     </div>
 </div>
 <script src="./node_modules/jquery/dist/jquery.min.js"></script>

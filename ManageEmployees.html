@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">TLU</a>
+            <button aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    data-bs-target="#navbarTogglerDemo02" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Employees</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input aria-label="Search" class="form-control me-2" placeholder="Search" type="search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div style="height: 20px; background: linear-gradient(180deg,gray,white)"></div>
+</header>
+<div class="container">
+    <div class="content d-flex justify-content-between">
+        <h2>Manage <span>Employees</span></h2>
+        <div class="d-flex">
+            <p class="mx-3"><i class="bi bi-dash-circle-fill"></i>Delete</p>
+            <p id="addElm" style="cursor: pointer"><i class="bi bi-plus-circle"></i>Add New Employee</p>
+        </div>
+    </div>
+    <div class="table">
+        <ul class="row">
+            <li class="col"><input type="checkbox"></li>
+            <li class="col">Name</li>
+            <li class="col">Email</li>
+            <li class="col">Address</li>
+            <li class="col">Phone</li>
+            <li class="col">Actions</li>
+        </ul>
+        <ul class="row">
+            <li class="col"><input type="checkbox"></li>
+            <li class="col">Thomas Hardy</li>
+            <li class="col">thomashardy@mail.com</li>
+            <li class="col">89 Chiaroscuro Rd, Portland, USA</li>
+            <li class="col">1234567890</li>
+            <li class="col">
+                <i class="bi bi-pencil-square"></i>
+                <i class="bi bi-trash"></i>
+            </li>
+        </ul>
+        <ul class="row">
+            <li class="col"><input type="checkbox"></li>
+            <li class="col">Maria Anders</li>
+            <li class="col">mariaanders@email.com</li>
+            <li class="col">25, rue Lauriston, Paris, France</li>
+            <li class="col">0987654321</li>
+            <li class="col">
+                <i class="bi bi-pencil-square"></i>
+                <i class="bi bi-trash"></i>
+            </li>
+        </ul>
+        <!--        hay dien them thong tin cua 3 ng nua hay tu dong dien email dua theo ten-->
+        <ul class="row">
+            <li class="col"><input type="checkbox"></li>
+            <li class="col">Franc Francisco</li>
+            <li class="col">francfrancisco@email.com</li>
+            <li class="col">C/ Araquil, 67, Madrid, Spain</li>
+            <li class="col">0987654321</li>
+            <li class="col">
+                <i class="bi bi-pencil-square"></i>
+                <i class="bi bi-trash"></i>
+            </li>
+        </ul>
+        <ul class="row">
+            <li class="col"><input type="checkbox"></li>
+            <li class="col">Roland Mendel</li>
+            <li class="col">rolandmesndel@email.com</li>
+            <li class="col">Kirchgasse 6, Graz, Austria</li>
+            <li class="col">0987654321</li>
+            <li class="col">
+                <i class="bi bi-pencil-square"></i>
+                <i class="bi bi-trash"></i>
+            </li>
+        </ul>
+        <ul class="row">
+            <li class="col"><input type="checkbox"></li>
+            <li class="col">Helen Bennett</li>
+            <li class="col">helenbennett@email.com</li>
+            <li class="col">908 W. Capital Way, Tacoma, USA</li>
+            <li class="col">0987654321</li>
+            <li class="col">
+                <i class="bi bi-pencil-square"></i>
+                <i class="bi bi-trash"></i>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <div class="d-flex justify-content-between">
+            <p>Showing 5 out of 25 entries</p>
+            <div class="d-flex justify-content-around">
+                <p class="px-3">Previous</p>
+                <p class="px-3">1</p>
+                <p class="px-3">2</p>
+                <p class="px-3" style="background-color: gray; color: white">3</p>
+                <p class="px-3">4</p>
+                <p class="px-3">5</p>
+                <p class="px-3">Next</p></div>
+        </div>
+    </footer>
+    <!--    From add Elm-->
+    <div class="w-50 mx-auto border" id="formAdd">
+        <div class="d-flex justify-content-between">
+            <h3>Add Employee</h3>
+            <i class="bi bi-x" id="exitForm" style="cursor: pointer"></i>
+        </div>
+
+        <div>
+            <p>Name</p>
+            <input class="w-75" id="f-name" type="text">
+            <p>Email</p>
+            <input class="w-75" id="email" type="email">
+            <p>Address</p>
+            <input class="w-75" id="address" type="text">
+            <p>Phone</p>
+            <input class="w-75" id="phone" type="number">
+        </div>
+        <div class="d-flex justify-content-end mt-5">
+            <button class="mx-3">Cancel</button>
+            <button class="bg-warning-subtle px-3">Add</button>
+        </div>
+
+    </div>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./js/ManageElm.js"></script>
+</div>
+</body>
+</html>
